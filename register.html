@@ -9,38 +9,52 @@
 		<form name="myRegister" id="myRegister" action="login.html">
 			<fieldset>
 				<legend>Register</legend>
+
 				<span>* require</span> <br>
 				<span id="errormsg"></span> <br>
+
 				First name*: 
 				<input type="text" name="firstname" required>
+
 				Last name*: 
-				<input type="text" name="lastname" >
+				<input type="text" name="lastname" required>
 				<br>
+
 				Gender*: 
-				<input type="radio" name="gender" value="male" >Male
-				<input type="radio" name="gender" value="female" >Female
-				<input type="radio" name="gender" value="other" >Other
+				<input type="radio" name="gender" value="male" required>Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
 				<br>
+
 				Birthday*: 
-				<input type="date" name="bday" value="" >
+				<input type="date" name="bday" required>
 				<br>
+
 				Email address*: 
-				<input type="email" name="email" >
+				<input type="email" name="email" required>
 				<br>
+
 				Username*: 
-				<input type="text" name="username" >
+				<input type="text" name="username" required>
 				<br>
+
 				Password*: 
 				<input type="password" name="password" required>
 				<br>
+
 				Retype Password*: 
 				<input type="password" name="password" required>
 				<br>
+
 				<input type="submit" value="Register" id="registerBtn">
 				<input type="reset" value="Reset" id="resetBtn">
+
+				<br><br>
+
+				Already have an account?
+				<a href="login.html">Login</a>
+
 			</fieldset>
 		</form>
-
-		
 	</body>
 </html>
